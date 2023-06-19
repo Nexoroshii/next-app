@@ -6,7 +6,7 @@ export default function User({ user }) {
     const { id } = router.query;
 
     return (
-        <MainContainer>
+        <MainContainer keywords={user.name}>
             <div className={styles.user}>
                 <h1>User with id {id}</h1>
                 <div>User name - {user.name}</div>
